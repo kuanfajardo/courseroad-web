@@ -9,3 +9,6 @@ test/e2e/reports
 .idea/
 app/__pycache__/
 vuedj/__pycache__/
+static/
+Dockerfile
+docker-compose.yml
