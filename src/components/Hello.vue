@@ -1,7 +1,7 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-  </div>
+  <span class="hello">
+    {{ msg }}
+  </span>
 </template>
 
 <script>
@@ -12,7 +12,7 @@ export default {
       // with hot-reload because the reloaded component
       // preserves its current state and we are modifying
       // its initial state.
-      msg: 'Hello World!'
+      msg: 'courseroad'
     }
   }
 }
@@ -20,7 +20,15 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1 {
-  color: #42b983;
+.hello {
+  color: #FFFFFF;
+  font-size: 7rem;
+  text-align: center;
+  /*padding-left: 20%;*/
+  /*padding-right: 20%;*/
+  /*margin-top: 0;*/
+  /*background-color: #1A01CC;*/
+  margin: 1rem 5rem 0 1rem;
+  /*white-space: nowrap;*/
 }
 </style>

@@ -1,52 +1,79 @@
 <template>
   <div id="app">
-    <img class="logo" src="./assets/vue.png">
-    <br>
-    <img class="logo" src="./assets/dj.png">
-    <hello></hello>
-    <p>
-      Welcome to your Django - Vue.js app!
-    </p>
+    <!--<img class="logo" src="./assets/vue.png">-->
+    <!--<br>-->
+    <!--<img class="logo" src="./assets/dj.png">-->
+    <div id="top">
+      <hello></hello>
+      <add-class></add-class>
+    </div>
+
+
+    <!--<p>-->
+      <!--Welcome to your poop - Vue.js app!-->
+    <!--</p>-->
   </div>
 </template>
 
 <script>
 import Hello from './components/Hello'
+import AddClass from './components/AddClass'
 
 export default {
   components: {
-    Hello
+    Hello,
+    AddClass
   }
 }
 </script>
 
 <style>
+
+  @font-face {
+    font-family: "KG Second Chances Sketch";,
+    src: "./assets/KGSecondChancesSketch.ttf";
+  }
+
 html {
   height: 100%;
+  background-color: #4b65af;
+  font-size: 62.5%;
 }
 
 body {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /*align-items: center;*/
+  /*justify-content: center;*/
   height: 100%;
 }
 
+/*p {*/
+  /*padding: 0;*/
+  /*margin: 0;*/
+/*}*/
+
 #app {
-  color: #2c3e50;
-  margin-top: -100px;
-  max-width: 600px;
-  font-family: Source Sans Pro, Helvetica, sans-serif;
-  text-align: center;
+  /*background-color: #0b97c4;*/
+  color: #FFFFFF;
+  /*margin-top: -100px;*/
+  max-width: 100%;
+  font-family: "KG Second Chances Sketch", sans-serif;
+  text-align: left;
 }
 
 #app a {
-  color: #42b983;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
 .logo {
   width: 100px;
   height: 100px
+}
+
+#top {
+  display: flex;
+  align-items: center;
+  /*width: 100%;*/
 }
 </style>
