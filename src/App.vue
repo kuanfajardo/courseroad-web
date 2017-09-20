@@ -7,7 +7,7 @@
       <hello></hello>
       <add-class></add-class>
     </div>
-
+    <semester></semester>
 
     <!--<p>-->
       <!--Welcome to your poop - Vue.js app!-->
@@ -18,11 +18,13 @@
 <script>
 import Hello from './components/Hello'
 import AddClass from './components/AddClass'
+import Semester from './components/Semester'
 
 export default {
   components: {
     Hello,
-    AddClass
+    AddClass,
+    Semester
   }
 }
 </script>
