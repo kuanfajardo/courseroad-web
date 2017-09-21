@@ -7,7 +7,12 @@
       <hello></hello>
       <add-class></add-class>
     </div>
-    <semester></semester>
+    <!--<year></year>-->
+    <!--<year></year>-->
+    <!--<year></year>-->
+    <!--<year></year>-->
+
+    <year v-for="year in years" :year="year"></year>
 
     <!--<p>-->
       <!--Welcome to your poop - Vue.js app!-->
@@ -19,12 +24,20 @@
 import Hello from './components/Hello'
 import AddClass from './components/AddClass'
 import Semester from './components/Semester'
+import Year from './components/Year'
 
 export default {
   components: {
     Hello,
     AddClass,
-    Semester
+    Semester,
+    Year
+  },
+
+  data () {
+    return {
+      years: ['Freshman', 'Sophomore', 'Junior', 'Senior']
+    }
   }
 }
 </script>
@@ -58,7 +71,7 @@ body {
   /*background-color: #0b97c4;*/
   color: #FFFFFF;
   /*margin-top: -100px;*/
-  max-width: 100%;
+  width: 100%;
   font-family: "KG Second Chances Sketch", sans-serif;
   text-align: left;
 }

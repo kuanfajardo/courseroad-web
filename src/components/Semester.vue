@@ -1,5 +1,5 @@
 <template>
-  <div class="semester">
+  <div class="semester" :hidden="hidden">
     <p>{{name}}</p>
   </div>
 </template>
@@ -7,10 +7,12 @@
 <script>
   export default {
     data () {
-      return {
-        name: 'Freshman Fall'
-      }
-    }
+      return {}
+    },
+
+    props: [
+      'name', 'hidden'
+    ]
   }
 </script>
 
@@ -18,12 +20,13 @@
 <style scoped>
 
   .semester {
-    margin-top: 3rem;
-    position: absolute;
-    left: 2%;
-    right: 2%;
+    margin: 0;
+    /*position: absolute;*/
+    /*left: 2%;*/
+    /*right: 2%;*/
     background-color: #f7e1b5;
     min-height: 75pt;
+    width: 96%;
     height: 10rem;
     color: #000000;
     font-size: 2rem;

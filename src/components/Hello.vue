@@ -28,7 +28,7 @@ export default {
   /*padding-right: 20%;*/
   /*margin-top: 0;*/
   /*background-color: #1A01CC;*/
-  margin: 1rem 5rem 0 1rem;
+  margin: 1rem 5rem 0 3rem;
   /*white-space: nowrap;*/
 }
 </style>
