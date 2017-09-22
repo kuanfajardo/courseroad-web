@@ -7,13 +7,16 @@
       <hello></hello>
       <add-class></add-class>
     </div>
+
     <!--<year></year>-->
     <!--<year></year>-->
     <!--<year></year>-->
     <!--<year></year>-->
 
-    <year v-for="year in years" :year="year"></year>
-
+    <div>
+      <!--<year v-for="year in years" :year="year"></year>-->
+      <main></main>
+    </div>
     <!--<p>-->
       <!--Welcome to your poop - Vue.js app!-->
     <!--</p>-->
@@ -23,21 +26,13 @@
 <script>
 import Hello from './components/Hello'
 import AddClass from './components/AddClass'
-import Semester from './components/Semester'
-import Year from './components/Year'
+import Main from './components/Main'
 
 export default {
   components: {
     Hello,
     AddClass,
-    Semester,
-    Year
-  },
-
-  data () {
-    return {
-      years: ['Freshman', 'Sophomore', 'Junior', 'Senior']
-    }
+    Main
   }
 }
 </script>

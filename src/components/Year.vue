@@ -29,7 +29,7 @@
           },
           {
             name: 'IAP',
-            hidden: true
+            hidden: false
           },
 
           {
@@ -57,7 +57,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: 3rem;
-    max-width: 70%;
+    max-width: 100%;
   }
 
   #fall {
