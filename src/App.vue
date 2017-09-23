@@ -3,10 +3,13 @@
     <!--<img class="logo" src="./assets/vue.png">-->
     <!--<br>-->
     <!--<img class="logo" src="./assets/dj.png">-->
-    <div id="top">
-      <hello></hello>
-      <add-class></add-class>
-    </div>
+    <!--<div id="top">-->
+      <!--&lt;!&ndash;<hello></hello>&ndash;&gt;-->
+      <!--&lt;!&ndash;<add-class></add-class>&ndash;&gt;-->
+      <!--<top-bar></top-bar>-->
+    <!--</div>-->
+
+    <top-bar></top-bar>
 
     <!--<year></year>-->
     <!--<year></year>-->
@@ -27,12 +30,14 @@
 import Hello from './components/Hello'
 import AddClass from './components/AddClass'
 import Main from './components/Main'
+import TopBar from './components/TopBar'
 
 export default {
   components: {
     Hello,
     AddClass,
-    Main
+    Main,
+    TopBar
   }
 }
 </script>
@@ -55,6 +60,7 @@ body {
   /*align-items: center;*/
   /*justify-content: center;*/
   height: 100%;
+  margin: 0;
 }
 
 /*p {*/
@@ -67,6 +73,8 @@ body {
   color: #FFFFFF;
   /*margin-top: -100px;*/
   width: 100%;
+  height: 100%;
+  margin: 0;
   font-family: "KG Second Chances Sketch", sans-serif;
   text-align: left;
 }
@@ -84,6 +92,11 @@ body {
 #top {
   display: flex;
   align-items: center;
+  /*position: fixed;*/
   /*width: 100%;*/
+}
+
+main {
+  margin-top: 10rem;
 }
 </style>

@@ -5,11 +5,18 @@
 </template>
 
 <script>
+  import VueSticky from 'vue-sticky'
+  const v = VueSticky.default
+
   export default {
     data () {
       return {
         msg: 'msg'
       }
+    },
+
+    directives: {
+      'sticky': v
     }
   }
 </script>
