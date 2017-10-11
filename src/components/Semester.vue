@@ -1,10 +1,13 @@
 <template>
   <div class="semester" :hidden="hidden">
     <p>{{name}}</p>
+    <class-button></class-button>
   </div>
 </template>
 
 <script>
+  import ClassButton from './ClassButton.vue'
+
   export default {
     data () {
       return {}
@@ -12,7 +15,9 @@
 
     props: [
       'name', 'hidden'
-    ]
+    ],
+
+    components: [ClassButton]
   }
 </script>
 
@@ -31,6 +36,7 @@
     color: #000000;
     font-size: 2rem;
     border-radius: 7pt;
+    display: block;
   }
 
   p {
