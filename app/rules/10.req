@@ -1,0 +1,137 @@
+{
+  "idd": 0,
+  "name": "10: Chemical Engineering",
+  "count": -1,
+  "type": "req",
+  "reqs": [
+    {
+      "idd": 1,
+      "name": "Foundational Subjects",
+      "type": "leaf",
+      "count": -1,
+      "reqs": [
+        "5.12", "5.310", "5.60", "10.10", "18.03"
+      ]
+    },
+    {
+      "idd": 2,
+      "name": "Intermediate Subjects",
+      "count": -1,
+      "type": "req",
+      "reqs": [
+        {
+          "idd": 3,
+          "type": "leaf",
+          "count": -1,
+          "reqs": [
+            "10.213", "10.301", "10.302"
+          ]
+        },
+        {
+          "idd": 4,
+          "type": "leaf",
+          "count": 1,
+          "reqs": [
+            "5.07", "7.05"
+          ]
+        },
+        {
+          "idd": 5,
+          "type": "leaf",
+          "count": 1,
+          "reqs": [
+            "10.26", "10.27", "10.28", "10.29"
+          ]
+        }
+      ]
+    },
+    {
+      "idd": 6,
+      "type": "req",
+      "count": -1,
+      "name": "Advanced Subjects",
+      "reqs": [
+        {
+          "idd": 7,
+          "type": "leaf",
+          "count": -1,
+          "reqs": [
+            "10.32", "10.37", "10.490", "10.491"
+          ]
+        },
+        {
+          "idd": 8,
+          "type": "leaf",
+          "count": 2,
+          "reqs": [
+            "10.492", "10.493", "10.494"
+          ]
+        }
+      ]
+    },
+    {
+      "idd": 9,
+      "name": "Restricted Electives",
+      "type": "path",
+      "count": 1,
+      "paths": [
+        {
+          "pid": 0,
+          "idd": 9,
+          "type": "req",
+          "count": -1,
+          "reqs": [
+            {
+              "idd": 10,
+              "type": "leaf",
+              "count": -1,
+              "reqs": [
+                "One 9-unit class in Course 10"
+              ]
+            },
+            {
+              "idd": 14,
+              "type": "leaf",
+              "count": 1,
+              "reqs": [
+                "2.013",
+                "2.014",
+                "3.014",
+                "6.152[J]",
+                "10.26",
+                "10.27",
+                "10.28",
+                "10.29",
+                "10.467"
+              ]
+            }
+          ]
+        },
+        {
+          "pid": 1,
+          "idd": 9,
+          "type": "req",
+          "count": -1,
+          "reqs": [
+            {
+              "idd": 12,
+              "type": "leaf",
+              "count": -1,
+              "reqs": [
+                "One 6-unit class in Course 10"
+              ]
+            },
+            {
+              "idd": 13,
+              "type": "leaf",
+              "count": -1,
+              "reqs": [
+                "10.702[J]"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

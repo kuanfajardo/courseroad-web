@@ -1,0 +1,32 @@
+{
+  "idd": 0,
+  "name": "16: Aerospace Engineering",
+  "type": "req",
+  "count": -1,
+  "reqs": [
+    {
+      "idd": 1,
+      "name": "Departmental Core",
+      "type": "req",
+      "count": -1,
+      "reqs": [
+        {
+          "idd": 2,
+          "type": "leaf",
+          "count": -1,
+          "reqs": [
+            "6.00", "16.001", "16.002", "16.003", "16.004", "16.06", "16.07", "18.03"
+          ]
+        },
+        {
+          "idd": 3,
+          "type": "leaf",
+          "count": 1,
+          "reqs": [
+            "16.09", "6.041"
+          ]
+        }
+      ]
+    }
+  ]
+}
