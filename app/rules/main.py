@@ -1,5 +1,5 @@
-from app.engine import run
-from app.fancy_print import *
+from engine import run
+from fancy_print import *
 from copy import deepcopy
 import json
 
@@ -89,7 +89,7 @@ while True:
         else:
             show_pre_reqs = False
 
-        run(classes, "app/" + course + ".req", show_pre_reqs=show_pre_reqs)
+        run(classes, course + ".req", show_pre_reqs=show_pre_reqs)
         continue
 
     if inp_arr[0] == "course":

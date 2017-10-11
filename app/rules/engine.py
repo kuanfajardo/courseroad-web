@@ -1,5 +1,5 @@
 import json
-from app.fancy_print import *
+from fancy_print import *
 import requests
 
 satt = {}
@@ -20,7 +20,7 @@ pre_req_master = {}
 
 
 def tagged(subject: str, tag: str):
-    obj = json.load(open("app/tags.json"))
+    obj = json.load(open("tags.json"))
 
     if tag not in obj:
         print("yert")
