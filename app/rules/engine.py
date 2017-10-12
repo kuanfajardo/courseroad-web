@@ -190,8 +190,11 @@ def complete_sat(obj):
         return
 
     if typ == "path":
-        selected_path = requ_path_sat[obj["idd"]]
-        complete_sat(obj["paths"][selected_path])
+        # selected_path = requ_path_sat[obj["idd"]]
+        # complete_sat(obj["paths"][selected_path])
+
+        for path in obj["paths"]:
+            complete_sat(path)
 
         return
 
