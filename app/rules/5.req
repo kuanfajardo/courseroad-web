@@ -1,0 +1,35 @@
+{
+  "idd": 0,
+  "name": "5: Chemistry",
+  "type": "req",
+  "count": -1,
+  "reqs": [
+    {
+      "idd": 1,
+      "name": "Required Subjects",
+      "type": "leaf",
+      "count": -1,
+      "reqs": [
+        "5.03", "5.07", "5.12", "5.13", "5.60", "5.61"
+      ]
+    },
+    {
+      "idd": 2,
+      "name": "Departmental Laboratory Requirement",
+      "type": "leaf",
+      "count": -1,
+      "reqs": [
+        "5.351", "5.352", "5.353", "5.361", "5.362", "5.363", "5.371", "5.372", "5.373", "5.381", "5.382", "5.383"
+      ]
+    },
+    {
+      "idd": 3,
+      "name": "Restricted Electives",
+      "type": "leaf",
+      "count": 2,
+      "reqs": [
+        "5.04", "5.08", "5.43", "5.62"
+      ]
+    }
+  ]
+}

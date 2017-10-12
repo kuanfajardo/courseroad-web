@@ -3,7 +3,7 @@ from fancy_print import *
 from copy import deepcopy
 import json
 
-allowed_courses = {"6-3", "2", "16", "10"}
+allowed_courses = {"6-3", "2", "16", "10", "5"}
 
 print_header("+--------------------------------+\n"
              "|        COURSEROAD MINI         |\n"
