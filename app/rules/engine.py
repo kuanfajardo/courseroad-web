@@ -23,10 +23,9 @@ def tagged(subject: str, tag: str):
     obj = json.load(open("tags.json"))
 
     if tag not in obj:
-        print("yert")
         return False
 
-    return subject in obj[tag] #tag == '6-II' and subject == '6.170'
+    return subject in obj[tag]
 
 
 def check(obj, classes):
@@ -293,7 +292,7 @@ def cs(str_arr: list):
         if level == 0:
             print("\n-------------------------------------\n")
             out_str = "{0:" + str(level * 3 + 1) + "} {1}"
-            print_message(out_str.format("", "** " + str_line[0]) +" **")
+            print_message(out_str.format("", "** " + str_line[0]) + " **")
             print("")
         else:
             out_str = "{0:" + str(level * 3) + "} {1}"
@@ -328,7 +327,7 @@ def run(classes: set, req_file: str, show_pre_reqs=False):
         check_all_pre_reqs(classes)
 
 
-def check_all_pre_reqs(classes: list):
+def check_all_pre_reqs(classes: set):
     all_broken_reqs = {}
     for subject in classes:
         broken_pre_reqs = check_pre_req(subject, classes)
@@ -342,6 +341,8 @@ def check_all_pre_reqs(classes: list):
         print(bold("\nUnsatisfied Pre-Requisites:\n"))
         for subject, reqs in all_broken_reqs.items():
             print(bold(subject) + ":  " + failure(pre_req_string(reqs)))
+    else:
+        print(bold("\nAll Pre-Requisites Satisfied!\n"))
 
 
 def pre_req_string(p: list):
@@ -358,7 +359,8 @@ def pre_req_string(p: list):
 
     return req_str
 
-def check_pre_req(subject: str, classes: list):
+
+def check_pre_req(subject: str, classes: set):
     if subject in pre_req_master:
         return pre_req_master[subject]
 
@@ -371,14 +373,14 @@ def check_pre_req(subject: str, classes: list):
     }
 
     try:
-        json = requests.get(base_url, headers=headers).json()["item"]
+        req_json = requests.get(base_url, headers=headers).json()["item"]
     except:
         return []
 
-    if json["prerequisites"] == "None":
+    if req_json["prerequisites"] == "None":
         return True
 
-    all_pre_reqs = parse_pre_reqs(json["prerequisites"])
+    all_pre_reqs = parse_pre_reqs(req_json["prerequisites"])
     broken = []
     for pre_req in all_pre_reqs:
         sat = False
