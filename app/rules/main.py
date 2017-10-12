@@ -146,14 +146,14 @@ while True:
             arr = cls.split(".")
 
             if len(arr) != 2:
-                print_failure(cls + " is not a valid class.")
+                print_failure(cls.upper() + " is not a valid class.")
                 continue
 
-            if cls not in classes:
-                classes.add(cls)
-                print_success(cls + " added")
+            if cls.upper() not in classes:
+                classes.add(cls.upper())
+                print_success(cls.upper() + " added")
             else:
-                print_failure(cls + " already added.")
+                print_failure(cls.upper() + " already added.")
 
         continue
 
@@ -171,14 +171,14 @@ while True:
             arr = cls.split(".")
 
             if len(arr) != 2:
-                print_failure(cls + " is not a valid class.")
+                print_failure(cls.upper() + " is not a valid class.")
                 continue
 
-            if cls not in classes:
-                print_failure(cls + " is not in your current classes.")
+            if cls.upper() not in classes:
+                print_failure(cls.upper() + " is not in your current classes.")
             else:
-                classes.remove(cls)
-                print_success(cls + " removed")
+                classes.remove(cls.upper())
+                print_success(cls.upper() + " removed")
 
         continue
 
